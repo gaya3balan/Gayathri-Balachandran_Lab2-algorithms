@@ -35,7 +35,7 @@ public class DriverPayMoney {
 			
 			object.targetcheck(targettedAmount, amountOfTransaction);   //use object to access method targetcheck of PayMoneyService class
 			
-			scan.close();                                               //close scanner at end of main 
+			scan.close();                                               //close scanner at end of main to free up resources
 		}
 		
 	}

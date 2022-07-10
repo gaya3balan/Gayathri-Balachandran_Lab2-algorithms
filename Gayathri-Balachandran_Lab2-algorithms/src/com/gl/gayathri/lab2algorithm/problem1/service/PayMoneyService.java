@@ -16,7 +16,7 @@ public class PayMoneyService {
 		
 		boolean isTargetAchieved = false; 
 		
-		int total = 0;                                       //initialize total 
+		int total = 0;                                       //initialize total before computation
 		
 		for (int j=0; j< transactionAmounts.length; j++) {
 			
@@ -24,7 +24,7 @@ public class PayMoneyService {
 			
 			if (total>= targettedAmount) {
 				
-				System.out.println("Target achieved after " + (j+1)+ " transactions");   //once sum of transaction amounts >= targetted amount
+				System.out.println("Target achieved after " + (j+1)+ " transactions" + "\n");   //once sum of transaction amounts >= targetted amount
 				isTargetAchieved = true;                                                 //set flag isTargetAchieved to true and exit loop 
 				break;
 				

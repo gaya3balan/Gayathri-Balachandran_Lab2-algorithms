@@ -14,21 +14,21 @@ public class TravelerPayment {
 		
 	}
 	
-	public void denominationsToPay(Integer denominations[], int amountToBePaid, int noOfDenominations) {      //Pass denominations array type as Integer instead of int as we are using Arrays sort method that takes Integer type in driver class 
+	public void denominationsToPay(Integer denominations[], int amountToBePaid, int numberOfDenominations) {      //Pass denominations array type as Integer instead of int as we are using Arrays sort method that takes Integer type in driver class 
 		
-		int denominationsToPay[] = new int[noOfDenominations];
+		int denominationsToPay[] = new int[numberOfDenominations];
 		
-		int amount = amountToBePaid;
+		int payAmount = amountToBePaid;
 		
 		for(int i=0; i<denominations.length;i++) {
 			
-			denominationsToPay[i]=amount/denominations[i];               
+			denominationsToPay[i]=payAmount/denominations[i];               
 			
-			amount-=(denominations[i]*denominationsToPay[i]);
+			payAmount-=(denominations[i]*denominationsToPay[i]);
 			
 		           }
 		
-		if(amount!=0) {
+		if(payAmount!=0) {
 			System.out.println("Sorry cant make exact payment");
 			return;
 		      }

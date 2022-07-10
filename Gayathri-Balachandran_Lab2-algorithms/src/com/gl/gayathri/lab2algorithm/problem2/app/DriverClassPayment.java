@@ -23,7 +23,7 @@ public class DriverClassPayment {
 		
 		System.out.println("enter the currency denominations value: " );   //request user for inputs 
 		
-		object.getDenominations(denominationsArray);
+		object.getDenominations(denominationsArray);       // use object to call getDenomations method and pass denomationsArray 
 		
         System.out.println("enter the amount you want to pay " );          //request user for inputs
 		
@@ -33,6 +33,7 @@ public class DriverClassPayment {
 		
 		object.denominationsToPay( denominationsArray,  amountToBePaid,  denominationsNumber); //Call denominationsToPay method using object 
 
+		scan.close();
 	}
 }
 
