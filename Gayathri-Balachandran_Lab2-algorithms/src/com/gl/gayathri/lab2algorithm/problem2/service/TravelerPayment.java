@@ -22,7 +22,7 @@ public class TravelerPayment {
 		
 		for(int i=0; i<denominations.length;i++) {
 			
-			denominationsToPay[i]=amount/denominations[i];              //divide the
+			denominationsToPay[i]=amount/denominations[i];               
 			
 			amount-=(denominations[i]*denominationsToPay[i]);
 			

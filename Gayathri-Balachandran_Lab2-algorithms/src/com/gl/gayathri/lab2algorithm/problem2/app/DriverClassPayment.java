@@ -15,23 +15,23 @@ public class DriverClassPayment {
 		
 		TravelerPayment object = new TravelerPayment();    //create object of TravelerPayment class 
 		
-		System.out.println("enter the size of currency denominations" );
+		System.out.println("enter the size of currency denominations" );   //request user for inputs
 		
 		int denominationsNumber = scan.nextInt();            
 		
 		Integer denominationsArray[] = new Integer[denominationsNumber];
 		
-		System.out.println("enter the currency denominations value: " );
+		System.out.println("enter the currency denominations value: " );   //request user for inputs 
 		
 		object.getDenominations(denominationsArray);
 		
-        System.out.println("enter the amount you want to pay " );
+        System.out.println("enter the amount you want to pay " );          //request user for inputs
 		
 		int amountToBePaid=scan.nextInt();
 		
 		Arrays.sort(denominationsArray, Collections.reverseOrder());   //use Arrays.sort method and reverse Order to sort array in descending order 
 		
-		object.denominationsToPay( denominationsArray,  amountToBePaid,  denominationsNumber); //call de
+		object.denominationsToPay( denominationsArray,  amountToBePaid,  denominationsNumber); //Call denominationsToPay method using object 
 
 	}
 }
