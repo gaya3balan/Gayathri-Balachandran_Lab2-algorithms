@@ -15,17 +15,17 @@ public class DriverClassPayment {
 		
 		TravelerPayment object = new TravelerPayment();    //create object of TravelerPayment class 
 		
-		System.out.println("enter the size of currency denominations" );   //request user for inputs
+		System.out.println("Enter the size of currency denominations" );   //request user for inputs
 		
 		int denominationsNumber = scan.nextInt();            
 		
 		Integer denominationsArray[] = new Integer[denominationsNumber];
 		
-		System.out.println("enter the currency denominations value: " );   //request user for inputs 
+		System.out.println("Enter the currency denominations value" );   //request user for inputs 
 		
 		object.getDenominations(denominationsArray);       // use object to call getDenomations method and pass denomationsArray 
 		
-        System.out.println("enter the amount you want to pay " );          //request user for inputs
+        System.out.println("Enter the amount you want to pay" );          //request user for inputs
 		
 		int amountToBePaid=scan.nextInt();
 		
